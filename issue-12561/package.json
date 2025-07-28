@@ -1,0 +1,8 @@
+{
+    "scripts": {
+        "lint": "oxlint"
+    },
+    "dependencies": {
+        "oxlint": "^1.8.0"
+    }
+}
