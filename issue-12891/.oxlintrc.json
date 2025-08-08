@@ -1,0 +1,16 @@
+{
+  "overrides": [
+    {
+      "files": ["*.vue"],
+      "rules": {
+        "no-restricted-imports": [
+          "error",
+          {
+            "paths": [{ "name": "lodash", "message": "Please use lodash-es instead." }],
+            "patterns": [{ "group": ["firebase-admin*"], "message": "Use firebase instead" }]
+          }
+        ]
+      }
+    }
+  ]
+}
