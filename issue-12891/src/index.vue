@@ -1,5 +1,9 @@
-<script>
-import { debounce } from 'lodash';
+<template>
+  <div></div>
+</template>
 
-console.log(_);
+<script lang="ts" setup>
+import { debounce } from "lodash";
 </script>
+
+<style lang="sass" scoped></style>
