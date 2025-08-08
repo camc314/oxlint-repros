@@ -1,13 +1,23 @@
 {
+  "plugins": ["typescript", "unicorn", "oxc", "import", "jsdoc", "promise", "node"],
+  "categories": {
+    "correctness": "error",
+    "suspicious": "error",
+    "pedantic": "error",
+    "perf": "error",
+    "style": "error",
+    "restriction": "error",
+    "nursery": "error"
+  },
+  "rules": {},
   "overrides": [
     {
-      "files": ["*.vue"],
+      "files": ["**/*.{ts,vue}"],
       "rules": {
-        "no-restricted-imports": [
+        "eslint/no-restricted-imports": [
           "error",
           {
-            "paths": [{ "name": "lodash", "message": "Please use lodash-es instead." }],
-            "patterns": [{ "group": ["firebase-admin*"], "message": "Use firebase instead" }]
+            "paths": [{ "name": "lodash", "message": "Please use lodash-es instead" }]
           }
         ]
       }
