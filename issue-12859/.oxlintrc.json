@@ -1,0 +1,149 @@
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "plugins": [
+    "typescript",
+    "unicorn",
+    "react"
+  ],
+  "ignorePatterns": [
+    "dist",
+    "node_modules",
+    "src/**/*.js",
+    "packages/api/src/**/api.ts",
+    "public"
+  ],
+  "categories": {
+    "correctness": "error",
+    "restriction": "error",
+    "style": "error"
+  },
+  "rules": {
+    "eqeqeq": [
+      2,
+      "always",
+      {
+        "null": "ignore"
+      }
+    ],
+    "no-console": [
+      2,
+      {
+        "allow": [
+          "warn",
+          "error",
+          "info",
+          "assert",
+          "debug",
+          "group",
+          "groupEnd"
+        ]
+      }
+    ],
+    "no-var": 2,
+    "no-const-assign": 2,
+    "no-extra-boolean-cast": 1,
+    "no-constant-binary-expression": 1,
+    "no-unused-vars": [
+      "error",
+      {
+        "varsIgnorePattern": "^_",
+        "argsIgnorePattern": "^_",
+        "caughtErrorsIgnorePattern": "^_"
+      }
+    ],
+    "arrow-body-style": 0,
+    "curly": 1,
+    "func-style": 0,
+    "func-names": 0,
+    "id-length": 0,
+    "init-declarations": 0,
+    "max-params": 0,
+    "no-alert": 0,
+    "no-continue": 0,
+    "no-danger": 1,
+    "no-magic-numbers": 0,
+    "no-nested-ternary": 0,
+    "no-plusplus": 0,
+    "no-ternary": 0,
+    "no-undefined": 0,
+    "no-void": 0,
+    "prefer-global-this": 0,
+    "prefer-exponentiation-operator": 0,
+    "sort-imports": 0,
+    "sort-keys": 0,
+    "yoda": 0
+  },
+  "overrides": [
+    {
+      "files": [
+        "**/*.{ts,tsx,mts}"
+      ],
+      "plugins": [
+        "typescript"
+      ],
+      "rules": {
+        "typescript/array-type": 0,
+        "typescript/consistent-indexed-object-style": 0,
+        "typescript/consistent-type-imports": 0,
+        "typescript/consistent-type-definitions": 1,
+        "typescript/explicit-function-return-type": 0,
+        "typescript/explicit-module-boundary-types": 0,
+        "typescript/no-explicit-any": 1,
+        "typescript/no-non-null-assertion": 0
+      }
+    },
+    {
+      "files": [
+        "**/*.{ts,tsx}"
+      ],
+      "plugins": [
+        "react"
+      ],
+      "rules": {
+        "react/display-name": 0,
+        "react/exhaustive-deps": 2,
+        "react/jsx-no-multiline-js": 0,
+        "react/jsx-equals-spacing": 0,
+        "react/jsx-no-target-blank": 0,
+        "react/jsx-key": 2,
+        "react/jsx-boolean-value": 0,
+        "react/jsx-filename-extension": 0,
+        "react/no-find-dom-node": 0,
+        "react/no-string-refs": 2,
+        "react/no-unescaped-entities": 0,
+        "react/prop-types": 0,
+        "react/react-in-jsx-scope": 0,
+        "react/rules-of-hooks": 2,
+        "react/self-closing-comp": 2
+      }
+    },
+    {
+      "files": [
+        "**/*.{ts,tsx,mts}"
+      ],
+      "plugins": [
+        "unicorn"
+      ],
+      "rules": {
+        "unicorn/filename-case": [
+          "error",
+          {
+            "case": "kebabCase",
+            "multipleFileExtensions": true
+          }
+        ],
+        "unicorn/catch-error-name": 0,
+        "unicorn/no-null": 0,
+        "unicorn/no-abusive-eslint-disable": 0,
+        "unicorn/no-array-for-each": 1,
+        "unicorn/no-array-reduce": 0,
+        "unicorn/no-nested-ternary": 0,
+        "unicorn/numeric-separators-style": 0,
+        "unicorn/prefer-optional-catch-binding": 0,
+        "unicorn/prefer-includes": 1,
+        "unicorn/prefer-spread": 1,
+        "unicorn/switch-case-braces": 0
+      }
+    }
+  ]
+}
