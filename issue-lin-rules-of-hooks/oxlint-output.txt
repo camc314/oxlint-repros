@@ -1,0 +1,25 @@
+
+> issue-lin-rules-of-hooks@1.0.0 lint:ox /Users/cameron/github/camc314/oxlint-repros/issue-lin-rules-of-hooks
+> oxlint -c .oxlintrc.json
+
+
+  ! eslint(no-unused-vars): Variable 'isMobile' is declared but never used. Unused variables should start with a '_'.
+   ,-[src/index.tsx:2:9]
+ 1 | const Foo = observer(function _Foo() {
+ 2 |   const isMobile = useScreenSize();
+   :         ^^^^|^^^
+   :             `-- 'isMobile' is declared here
+ 3 | })
+   `----
+  help: Consider removing this declaration.
+
+  x eslint-plugin-react-hooks(rules-of-hooks): React Hook "useScreenSize" is called in function "_Foo" that is neither a React function component nor a custom React Hook function. React component names must start with an uppercase letter. React Hook names must start with the word "use".
+   ,-[src/index.tsx:1:31]
+ 1 | const Foo = observer(function _Foo() {
+   :                               ^^^^
+ 2 |   const isMobile = useScreenSize();
+   `----
+
+Found 1 warning and 1 error.
+Finished in 1ms on 2 files with 67 rules using 12 threads.
+ ELIFECYCLE  Command failed with exit code 1.
