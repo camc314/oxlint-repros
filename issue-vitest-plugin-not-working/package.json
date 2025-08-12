@@ -1,0 +1,16 @@
+{
+    "name": "issue-vitest-plugin-not-working",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "lint": "oxlint"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "packageManager": "pnpm@10.10.0",
+    "dependencies": {
+        "oxlint": "^1.11.1"
+    }
+}
