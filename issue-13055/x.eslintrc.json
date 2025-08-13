@@ -1,0 +1,115 @@
+{
+    "env": {
+        "node": true,
+        "commonjs": true
+    },
+    "parserOptions": {
+        "ecmaVersion": 2020
+    },
+    "extends": ["plugin:node/recommended", "plugin:prettier/recommended"],
+    "plugins": ["node", "prettier"],
+    "globals": {
+        // Standard
+        "sails": true,
+        "_": true,
+        "__stack": true,
+        "__module": true,
+        "__function": true,
+        "__line": true,
+        "__obvWhere": true,
+        "__APPERROR": true,
+        "__CHECKSIMULATOR": true,
+        "GETARG": true,
+        "OPTIONS": true,
+        "i18n": true,
+        "Classlog": true,
+        "RequestPlan": true,
+        "Role": true,
+        "MethodPayment": true,
+        "MediaType": true,
+        "Nature": true,
+        "Platform": true,
+        "SourceMeet": true,
+        "StatusMeet": true,
+        "StatusSubscription": true,
+        "StatusTask": true,
+        "StatusTranscript": true,
+        "TypePlan": true,
+        "TypeTask": true,
+        "UnitErrors": true,
+        "Warnlevel": true,
+        "Workers": true,
+
+        // Globals
+
+        "IA": true,
+        "APPNAME": true,
+        "Countries": true,
+        "DB": true,
+        "Files": true,
+        "Globals": true,
+        "Logger": true,
+        "Helpers": true,
+        "Internals": true,
+        "Main": true,
+        "socketCore": true,
+
+        // Table
+        "Agent": true,
+        "Company": true,
+        "Contact": true,
+        "Dictionary": true,
+        "Document": true,
+        "Garbage": true,
+        "Guest": true,
+        "License": true,
+        "Log": true,
+        "Invoice": true,
+        "Instant": true,
+        "Meet": true,
+        "Plan": true,
+        "Push": true,
+        "Safebox": true,
+        "Statistics": true,
+        "System": true,
+        "Task": true,
+        "Transcript": true,
+        "User": true,
+        "Webhook": true,
+
+        // Variables
+        "Program": true,
+        "Sequelize": true
+    },
+    "rules": {
+        "prettier/prettier": [
+            "warn",
+            {
+                "usePrettierrc": true
+            }
+        ],
+        "no-undef": 2,
+        "node/no-deprecated-api": 0,
+        "node/no-extraneous-require": "error",
+        "node/no-unpublished-require": 0,
+        "node/no-unsupported-features/es-syntax": 0,
+        "node/no-unsupported-features/node-builtins": 0,
+        "no-process-exit": 0,
+        "no-empty-function": 0,
+        "no-import-assign": 0,
+        "indent": [
+            "warn",
+            4,
+            {
+                "SwitchCase": 1,
+                "MemberExpression": "off",
+                "FunctionDeclaration": { "body": 1, "parameters": "off" },
+                "FunctionExpression": { "body": 1, "parameters": "off" },
+                "CallExpression": { "arguments": "off" },
+                "ArrayExpression": 1,
+                "ObjectExpression": 1,
+                "ignoredNodes": ["ConditionalExpression"]
+            }
+        ]
+    }
+}
