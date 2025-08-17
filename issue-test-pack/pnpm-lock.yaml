@@ -1,0 +1,25 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      oxlint2:
+        specifier: file:../../../Boshen/oxc/napi/oxlint2/oxlint2-0.1.0.tgz
+        version: file:../../../Boshen/oxc/napi/oxlint2/oxlint2-0.1.0.tgz
+
+packages:
+
+  oxlint2@file:../../../Boshen/oxc/napi/oxlint2/oxlint2-0.1.0.tgz:
+    resolution: {integrity: sha512-vFh163OQS3kzvcnrfJzhKepcWBxEafC8XxOVy50dMG2ymFHY/3IhlYLMdqOuEuRKgiGImN3MTzu1LSs4wyqpyQ==, tarball: file:../../../Boshen/oxc/napi/oxlint2/oxlint2-0.1.0.tgz}
+    version: 0.1.0
+    engines: {node: '>=20.0.0'}
+    hasBin: true
+
+snapshots:
+
+  oxlint2@file:../../../Boshen/oxc/napi/oxlint2/oxlint2-0.1.0.tgz: {}
