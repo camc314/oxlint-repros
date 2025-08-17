@@ -1,4 +1,5 @@
 {
+  "ignorePatterns": ["**/*.d.ts"],
   "plugins": ["typescript", "unicorn", "oxc", "import", "jsdoc", "promise", "node"],
   "categories": {
     "correctness": "error",
@@ -9,17 +10,21 @@
     "restriction": "error",
     "nursery": "error"
   },
-  "rules": {},
+  "rules": {
+    "init-declarations": "off",
+    "eslint/no-restricted-imports": [
+      "error",
+      {
+        "paths": [{ "name": "lodash", "message": "Please use lodash-es instead" }],
+        "patterns": [{ "group": ["firebase-admin*"], "message": "Use firebase instead" }]
+      }
+    ]
+  },
   "overrides": [
     {
-      "files": ["**/*.{ts,vue}"],
+      "files": ["**/*.test.ts"],
       "rules": {
-        "eslint/no-restricted-imports": [
-          "error",
-          {
-            "paths": [{ "name": "lodash", "message": "Please use lodash-es instead" }]
-          }
-        ]
+        "eslint/no-restricted-imports": "off"
       }
     }
   ]

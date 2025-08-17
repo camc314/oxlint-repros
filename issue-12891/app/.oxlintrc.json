@@ -1,0 +1,95 @@
+{
+  "env": {
+    "browser": true
+  },
+  "ignorePatterns": ["**/*.d.ts", "vite.config.mts"],
+  "plugins": ["typescript", "unicorn", "oxc", "import", "jsdoc", "promise", "node"],
+  "categories": {
+    "correctness": "error",
+    "suspicious": "error",
+    "pedantic": "error",
+    "perf": "error",
+    "style": "error",
+    "restriction": "error",
+    "nursery": "error"
+  },
+  "extends": ["../.oxlintrc.json"],
+  "rules": {
+    "filename-case": "off",
+    "eslint/no-restricted-imports": [
+      "error",
+      {
+        "paths": [{ "name": "lodash", "message": "Please use lodash-es instead" }],
+        "patterns": [{ "group": ["firebase-admin*"], "message": "Use firebase instead" }]
+      }
+    ]
+  },
+  "overrides": [
+    {
+      "files": ["src/atoms/**/*.{ts,vue}"],
+      "rules": {
+        "eslint/no-restricted-imports": [
+          "error",
+          {
+            "paths": [{ "name": "lodash", "message": "Please use lodash-es instead" }],
+            "patterns": [
+              { "group": ["firebase-admin*"], "message": "Use firebase instead" },
+              {
+                "group": ["*/molecules/*", "*/organisms/*", "*/legacy/*"],
+                "message": "Atoms mustn't import from molecules or organisms or legacy"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "files": ["src/molecules/**/*.{ts,vue}"],
+      "rules": {
+        "eslint/no-restricted-imports": [
+          "error",
+          {
+            "paths": [{ "name": "lodash", "message": "Please use lodash-es instead" }],
+            "patterns": [
+              { "group": ["firebase-admin*"], "message": "Use firebase instead" },
+              {
+                "group": ["*/organisms/*", "*/legacy/*"],
+                "message": "Molecules mustn't import from organisms or legacy"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "files": ["src/organisms/**/*.{ts,vue}"],
+      "rules": {
+        "eslint/no-restricted-imports": [
+          "error",
+          {
+            "paths": [{ "name": "lodash", "message": "Please use lodash-es instead" }],
+            "patterns": [
+              { "group": ["firebase-admin*"], "message": "Use firebase instead" },
+              {
+                "group": ["*/legacy/*"],
+                "message": "Organisms mustn't import from legacy"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "files": ["src/**/*.examples.{ts,vue}"],
+      "rules": {
+        "eslint/no-restricted-imports": [
+          "error",
+          {
+            "paths": [{ "name": "lodash", "message": "Please use lodash-es instead" }],
+            "patterns": [{ "group": ["firebase-admin*"], "message": "Use firebase instead" }]
+          }
+        ]
+      }
+    }
+  ]
+}
