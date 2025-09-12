@@ -1,0 +1,17 @@
+{
+    "name": "issue-report-unused-imports",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "lint": "oxlint",
+        "lint:fix": "oxlint --fix-suggestions --fix-dangerously"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "packageManager": "pnpm@9.15.5+sha256.8472168c3e1fd0bff287e694b053fccbbf20579a3ff9526b6333beab8df65a8d",
+    "dependencies": {
+        "oxlint": "^1.15.0"
+    }
+}
