@@ -1,0 +1,1 @@
+{"files":[{"file_path":"/Users/cameron/github/camc314/oxlint-repros/issue-12950/src/index.ts","rules":["no-floating-promises"]},{"file_path":"/Users/cameron/github/camc314/oxlint-repros/issue-12950/src/vv.vue","rules":["no-floating-promises"]},{"file_path":"/Users/cameron/github/camc314/oxlint-repros/issue-12950/src/index.js","rules":["no-floating-promises"]}]}

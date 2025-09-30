@@ -1,0 +1,19 @@
+{
+    "name": "issue-12950",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "lint": "oxlint"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "packageManager": "pnpm@10.10.0",
+    "dependencies": {
+        "oxlint": "^1.11.1"
+    },
+    "devDependencies": {
+        "typescript": "^5.9.2"
+    }
+}

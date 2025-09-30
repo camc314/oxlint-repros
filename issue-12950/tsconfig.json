@@ -1,0 +1,8 @@
+{
+    "compilerOptions": {
+        "lib": ["es2024"]
+    },
+    "include": [
+         "**/*.ts", "**/*.tsx",
+    ]
+}
