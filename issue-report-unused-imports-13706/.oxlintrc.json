@@ -1,0 +1,18 @@
+{
+    "categories": {
+        "correctness": "off"
+    },
+    "rules": {
+        "no-unused-vars": [
+            "error",
+            {
+                "args": "none",
+                "ignoreRestSiblings": true,
+                "caughtErrors": false,
+                "ignoreClassWithStaticInitBlock": true,
+                "reportUsedIgnorePattern": false,
+                "reportVarsOnlyUsedAsTypes": false
+            }
+        ]
+    }
+}
