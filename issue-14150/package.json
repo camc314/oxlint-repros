@@ -1,0 +1,15 @@
+{
+    "name": "app",
+    "version": "1.0.0",
+    "description": "",
+    "license": "MIT",
+    "author": "",
+    "type": "commonjs",
+    "main": "main.js",
+    "scripts": {
+        "lint": "oxlint ."
+    },
+    "devDependencies": {
+        "oxlint": "1.18.0"
+    }
+}

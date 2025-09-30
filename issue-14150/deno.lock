@@ -1,0 +1,69 @@
+{
+  "version": "5",
+  "specifiers": {
+    "npm:oxlint@1.18.0": "1.18.0"
+  },
+  "npm": {
+    "@oxlint/darwin-arm64@1.18.0": {
+      "integrity": "sha512-z/4/ClV0sZYDNk/xsOZHr5BHFbAXI7LU+i3P8d/L2ejy7zF8e4WA8szd70OqVm7Gcsa81TSeeQygViR63WCQ1A==",
+      "os": ["darwin"],
+      "cpu": ["arm64"]
+    },
+    "@oxlint/darwin-x64@1.18.0": {
+      "integrity": "sha512-cQP5UtmfxZKLVyISh/BeaaK5z70AGOtQkf1wm7ZaEb0eT81PkLUdzkPwTjwyQq/TeT09uw2paVy3l2SEAO+JQA==",
+      "os": ["darwin"],
+      "cpu": ["x64"]
+    },
+    "@oxlint/linux-arm64-gnu@1.18.0": {
+      "integrity": "sha512-JsobGeuKwpQFKSgK398QHfZ4kN9XXWJ0xvI8kofoefO/LLmj1ox3+Yln3kx425AaooruRMqBhh1JFXqEKeDxOw==",
+      "os": ["linux"],
+      "cpu": ["arm64"]
+    },
+    "@oxlint/linux-arm64-musl@1.18.0": {
+      "integrity": "sha512-Sds76cCqGylhywWrJcJ++4JQ45MxQKDDm7iW6Gx6C9nH+DyCPnYOjZAMYDkQiiZ3MlWCIW87SggsHkMaGO45ew==",
+      "os": ["linux"],
+      "cpu": ["arm64"]
+    },
+    "@oxlint/linux-x64-gnu@1.18.0": {
+      "integrity": "sha512-pvBDpuf7SE3iMfwgmI3m8gandsdjs8CpIgiv/tiUhxCsKeK7gRVpiIr1XcewFrYwLn/km/EhjjFr/Kb7/CsHOA==",
+      "os": ["linux"],
+      "cpu": ["x64"]
+    },
+    "@oxlint/linux-x64-musl@1.18.0": {
+      "integrity": "sha512-9G0km2Rt4MAoGOVndD/7+U947dnxQkWtLX9en5Gkh3lC7HBDvVpYLopXddguWE+qbqEQKp67PiuITeyYQ4uESA==",
+      "os": ["linux"],
+      "cpu": ["x64"]
+    },
+    "@oxlint/win32-arm64@1.18.0": {
+      "integrity": "sha512-Px9436ey0xIuU3/PuXw8EwxJSWPIxiZ9pi7FiryOMisY0dNHQP9XlGvk1MNqzyFctNmas93ZG5zyyctzLTtiUg==",
+      "os": ["win32"],
+      "cpu": ["arm64"]
+    },
+    "@oxlint/win32-x64@1.18.0": {
+      "integrity": "sha512-6yG6xADwy3SJsBuV2TZXfDMWDAzDBpTx3Ja/shdHbhP+YiVT87rRESjT5dKmASqrzQViycgnZ71UXiTf/nxqTA==",
+      "os": ["win32"],
+      "cpu": ["x64"]
+    },
+    "oxlint@1.18.0": {
+      "integrity": "sha512-bR/XSaWwrRyt87IGdJtCIf3KLspkY4Ni7FfkOdERWihfyazs40NUMCyYICZo5ojU/8zIq+EWpa/gEf7wsoBOug==",
+      "optionalDependencies": [
+        "@oxlint/darwin-arm64",
+        "@oxlint/darwin-x64",
+        "@oxlint/linux-arm64-gnu",
+        "@oxlint/linux-arm64-musl",
+        "@oxlint/linux-x64-gnu",
+        "@oxlint/linux-x64-musl",
+        "@oxlint/win32-arm64",
+        "@oxlint/win32-x64"
+      ],
+      "bin": true
+    }
+  },
+  "workspace": {
+    "packageJson": {
+      "dependencies": [
+        "npm:oxlint@1.18.0"
+      ]
+    }
+  }
+}
