@@ -1,0 +1,19 @@
+{
+  "plugins": [
+    "eslint",
+    "import",
+    "typescript",
+    "unicorn",
+    "react",
+    "react-hooks",
+    "react-perf",
+    "oxc",
+    "vitest"
+  ],
+  "jsPlugins": [
+    "./customPlugins/my-custom.js"
+  ],
+  "rules": {
+    "my-custom/no-switch": "error"
+  }
+}
