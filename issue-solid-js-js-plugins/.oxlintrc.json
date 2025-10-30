@@ -1,0 +1,16 @@
+{
+  "overrides": [
+    {
+      "files": [
+        "**/*.tsx"
+      ],
+      "jsPlugins": [
+        "eslint-plugin-solid",
+        "@unocss/eslint-plugin"
+      ],
+      "rules": {
+        "eslint-plugin-solid/prefer-for": "error"
+      }
+    }
+  ]
+}
