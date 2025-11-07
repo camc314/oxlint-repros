@@ -1,0 +1,11 @@
+{
+  "name": "oxlint-issue-15399",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "lint": "oxlint"
+  },
+  "devDependencies": {
+    "oxlint": "1.17.0"
+  }
+}
