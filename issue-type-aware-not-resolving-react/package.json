@@ -1,0 +1,19 @@
+{
+  "name": "issue-type-aware-not-resolving-react",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/react": "^19.2.7",
+    "@typescript/native-preview": "^7.0.0-dev.20251125.1",
+    "oxlint": "^1.30.0",
+    "oxlint-tsgolint": "^0.8.2",
+    "react": "^19.2.0"
+  }
+}
