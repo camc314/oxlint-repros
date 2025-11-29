@@ -1,0 +1,11 @@
+{
+  "rules": {
+    "@typescript-eslint/strict-boolean-expressions": [
+      "error",
+      {
+        "allowNullableBoolean": true,
+        "allowString": false
+      }
+    ]
+  }
+}
