@@ -1,0 +1,6 @@
+{
+    "jsPlugins": ["eslint-plugin-prefer-early-return"],
+    "rules": {
+        "prefer-early-return/prefer-early-return": ["error"]
+    }
+}
