@@ -1,0 +1,16 @@
+{
+  "name": "cam-testing-oxlint-tsgolint-alpha",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "oxlint": "^1.32.0",
+    "oxlint-tsgolint": "^0.8.4"
+  }
+}
