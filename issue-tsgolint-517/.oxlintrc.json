@@ -1,0 +1,8 @@
+{
+    "categories": {
+        "correctness": "off"
+    },
+    "rules": {
+        "typescript/no-base-to-string": "error"
+    }
+}
