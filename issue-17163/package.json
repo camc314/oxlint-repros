@@ -1,0 +1,13 @@
+{
+    "name": "issue-17163-repro",
+    "version": "1.0.0",
+    "description": "Reproduction for oxlint issue #17163 - @stylistic rules crash under oxlint",
+    "scripts": {
+        "lint": "oxlint -c ./oxlint.json"
+    },
+    "devDependencies": {
+        "@stylistic/eslint-plugin": "^4.2.0",
+        "oxlint": "^1.34.0",
+        "typescript": "^5.7.2"
+    }
+}
