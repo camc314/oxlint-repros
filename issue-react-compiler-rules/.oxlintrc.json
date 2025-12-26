@@ -1,4 +1,12 @@
 {
     "$schema": "https://raw.githubusercontent.com/oxc-project/oxc/main/npm/oxlint/configuration_schema.json",
-    "plugins": ["react-compiler"]
+    "jsPlugins": [
+        {
+            "name": "react-compiler",
+            "specifier": "eslint-plugin-react-hooks"
+        }
+    ],
+    "rules": {
+        "react-compiler/immutability": "error"
+    }
 }

@@ -1,6 +1,6 @@
 # React Compiler Rules with Oxlint
 
-This folder demonstrates how to configure oxlint to run React Compiler rules from the `eslint-plugin-react-compiler` package.
+This folder demonstrates how to configure oxlint to run React Compiler rules using the `eslint-plugin-react-hooks` package with plugin aliasing.
 
 ## Setup
 
@@ -11,15 +11,29 @@ npm install
 
 2. The configuration includes:
    - `oxlint` for linting
-   - `eslint-plugin-react-compiler` for React Compiler rules
+   - `eslint-plugin-react-hooks` which includes React Compiler rules
 
-3. `.oxlintrc.json` is configured to enable the `react-compiler` plugin:
+3. `.oxlintrc.json` is configured to use external JS plugins with aliasing:
 ```json
 {
     "$schema": "https://raw.githubusercontent.com/oxc-project/oxc/main/npm/oxlint/configuration_schema.json",
-    "plugins": ["react-compiler"]
+    "jsPlugins": [
+        {
+            "name": "react-compiler",
+            "specifier": "eslint-plugin-react-hooks"
+        }
+    ],
+    "rules": {
+        "react-compiler/immutability": "error"
+    }
 }
 ```
+
+The key points are:
+- Use `jsPlugins` (not `plugins`) for external JavaScript ESLint plugins
+- Use plugin aliasing with `name` and `specifier` to give the plugin a custom name
+- The React Compiler rules are included in `eslint-plugin-react-hooks` (version 7.0+)
+- Enable specific rules using the format `<alias>/<rule-name>`
 
 ## Example Code
 
@@ -37,7 +51,7 @@ function MyComponent(props) {
 export default MyComponent;
 ```
 
-This code mutates props directly, which is a violation that the React Compiler would catch.
+This code mutates props directly, which violates the `immutability` rule from React Compiler.
 
 ## Running Oxlint
 
@@ -51,27 +65,34 @@ npm run lint
 > issue-react-compiler-rules@1.0.0 lint
 > oxlint
 
-Failed to parse oxlint configuration file.
+WARNING: JS plugins are experimental and not subject to semver.
+Breaking changes are possible while JS plugins support is under development.
 
-  × Failed to parse config with error Error("Unknown plugin: 'react-compiler'.", line: 0, column: 0)
+  × react-compiler(immutability): Error: This value cannot be modified
+  │ 
+  │ Modifying component props or hook arguments is not allowed. Consider using a local variable instead.
+  │ 
+  │   2 | function MyComponent(props) {
+  │   3 |   // This violates the rule: mutating props directly
+  │ > 4 |   props.value = 42;
+  │     |   ^^^^^ value cannot be modified
+  │   5 |
+  │   6 |   return <div>{props.value}</div>;
+  │   7 | }
+   ╭─[src/index.jsx:4:3]
+ 3 │   // This violates the rule: mutating props directly
+ 4 │   props.value = 42;
+   ·   ─────
+ 5 │   
+   ╰────
+
+Found 0 warnings and 1 error.
+Finished in 440ms on 1 file using 4 threads.
 ```
 
 ## Result
 
-As of oxlint version 1.35.0, the `react-compiler` plugin is not yet supported. The available plugins are:
-- `unicorn` (enabled by default)
-- `oxc` (enabled by default)
-- `typescript` (enabled by default)
-- `import`
-- `react`
-- `jsdoc`
-- `jest`
-- `vitest`
-- `jsx-a11y`
-- `nextjs`
-- `react-perf`
-- `promise`
-- `node`
-- `vue`
+Successfully configured oxlint to run React Compiler rules! The React Compiler rules are available in `eslint-plugin-react-hooks` version 7.0+, and can be used with oxlint through the external JS plugins feature with plugin aliasing.
 
-To add React Compiler support, oxlint would need to implement the rules from `eslint-plugin-react-compiler`.
+Note: JS plugins are experimental in oxlint and not subject to semver.
+
