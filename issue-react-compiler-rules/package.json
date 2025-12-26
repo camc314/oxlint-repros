@@ -1,0 +1,19 @@
+{
+    "name": "issue-react-compiler-rules",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "lint": "oxlint"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "packageManager": "pnpm@10.10.0",
+    "dependencies": {
+        "oxlint": "^1.35.0"
+    },
+    "devDependencies": {
+        "eslint-plugin-react-hooks": "^7.0.1"
+    }
+}
