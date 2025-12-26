@@ -1,0 +1,8 @@
+
+> issue-react-compiler-rules@1.0.0 lint
+> oxlint
+
+Failed to parse oxlint configuration file.
+
+  [38;2;225;80;80;1m×[0m [38;2;225;80;80;1mFailed to parse config with error Error("Unknown plugin: 'react-compiler'.", line: 0, column: 0)[0m
+
