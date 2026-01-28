@@ -1,0 +1,6 @@
+{
+  "jsPlugins": ["eslint-plugin-slonik"],
+  "rules": {
+    "eslint-plugin-slonik/check-sql": "error"
+  }
+}

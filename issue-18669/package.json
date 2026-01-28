@@ -1,0 +1,15 @@
+{
+  "name": "issue-18669",
+  "version": "1.0.0",
+  "description": "Reproduction for oxc issue 18669 - Panic in output formatter when loading ESLint plugin with native N-API dependencies",
+  "private": true,
+  "devDependencies": {
+    "eslint-plugin-slonik": "^1.0.4",
+    "oxlint": "latest",
+    "oxlint-tsgolint": "latest",
+    "typescript": "^5.0.0"
+  },
+  "scripts": {
+    "lint": "oxlint --type-aware"
+  }
+}
