@@ -1,0 +1,9 @@
+{
+  "plugins": ["license-header"],
+  "rules": {
+    "license-header/header": [
+      "error",
+      ["/* my header */"]
+    ]
+  }
+}
