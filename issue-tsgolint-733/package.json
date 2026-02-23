@@ -1,0 +1,19 @@
+{
+    "name": "issue-tsgolint-733",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "lint": "oxlint --type-check --type-aware"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "oxlint": "^1.50.0",
+        "oxlint-tsgolint": "^0.14.2"
+    },
+    "devDependencies": {
+        "@types/deno": "^2.5.0"
+    }
+}

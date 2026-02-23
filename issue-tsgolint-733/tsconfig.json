@@ -1,0 +1,8 @@
+{
+    "compilerOptions": {
+        "types": ["deno"],
+        "paths": {
+            "@std/*": ["./node_modules/@std/*"]
+        }
+    }
+}
