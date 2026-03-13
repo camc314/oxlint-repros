@@ -1,0 +1,17 @@
+{
+    "name": "issue-20328",
+    "version": "1.0.0",
+    "description": "Reproduction for oxc-project/oxc issue #20328",
+    "scripts": {
+        "lint": "oxlint --config oxlintrc.json --tsconfig tsconfig.json --type-aware --type-check src/foo.ts src/bar.ts",
+        "lint:debug": "OXC_LOG=debug oxlint --config oxlintrc.json --tsconfig tsconfig.json --type-aware --type-check src/foo.ts src/bar.ts"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "packageManager": "pnpm@10.10.0",
+    "devDependencies": {
+        "oxlint": "^1.55.0",
+        "typescript": "6.0.0-beta"
+    }
+}
