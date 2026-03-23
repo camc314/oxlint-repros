@@ -1,9 +1,12 @@
 {
-    "extends": "./tsconfig.json",
+    "extends": "./tsconfig.src.json",
+    "references": [
+        {
+            "path": "./tsconfig.src.json"
+        }
+    ],
     "compilerOptions": {
-        "noEmit": true,
-        "declaration": false,
-        "emitDeclarationOnly": false,
+        "composite": true,
         "types": [
             "node",
             "vite-plus/test"
