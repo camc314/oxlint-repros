@@ -1,0 +1,9 @@
+{
+    "categories": {
+        "correctness": "off"
+    },
+    "plugins": ["react"],
+    "rules": {
+        "react/jsx-no-useless-fragment": ["error", { "allowExpressions": true }]
+    }
+}

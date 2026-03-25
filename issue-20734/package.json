@@ -1,0 +1,23 @@
+{
+    "name": "issue-20734",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "lint:ox": "oxlint -c oxlint.config.json src/index.tsx",
+        "lint:eslint": "eslint src/index.tsx"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "packageManager": "pnpm@10.10.0",
+    "dependencies": {
+        "oxlint": "^1.57.0"
+    },
+    "devDependencies": {
+        "eslint": "^9.39.4",
+        "eslint-plugin-react": "^7.37.5",
+        "typescript": "^5.9.2",
+        "typescript-eslint": "^8.57.2"
+    }
+}
