@@ -1,0 +1,10 @@
+{
+    "rules": {
+        "typescript/no-unsafe-assignment": "error",
+        "typescript/no-unsafe-member-access": "error"
+    },
+    "options": {
+        "typeAware": true,
+        "typeCheck": true
+    }
+}
