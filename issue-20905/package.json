@@ -1,0 +1,21 @@
+{
+  "name": "issue-20905",
+  "version": "1.0.0",
+  "description": "Repro for oxc-project/oxc#20905",
+  "scripts": {
+    "lint:eslint": "eslint src/index.ts",
+    "lint:ox": "oxlint -c oxlint.config.json src/index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.10.0",
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.2.0",
+    "eslint-plugin-promise": "^7.2.1",
+    "oxlint": "^1.59.0",
+    "typescript": "^6.0.2",
+    "typescript-eslint": "^8.58.1"
+  }
+}
