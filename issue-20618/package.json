@@ -1,0 +1,18 @@
+{
+  "name": "issue-20618",
+  "version": "1.0.0",
+  "description": "Repro for oxc-project/oxc#20618",
+  "scripts": {
+    "lint:eslint": "eslint src/index.js",
+    "lint:ox": "oxlint -c oxlint.config.json src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.10.0",
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.2.0",
+    "oxlint": "^1.59.0"
+  }
+}
