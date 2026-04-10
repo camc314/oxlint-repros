@@ -27,5 +27,6 @@
     "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true,
     "strictPropertyInitialization": false // remove error on class properties in fixtures
-  }
+  },
+  "include": []
 }
