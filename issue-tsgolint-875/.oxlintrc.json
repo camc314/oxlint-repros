@@ -1,0 +1,9 @@
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "rules": {
+    "typescript/no-unnecessary-type-arguments": "error"
+  },
+  "options": {
+    "typeAware": true
+  }
+}
