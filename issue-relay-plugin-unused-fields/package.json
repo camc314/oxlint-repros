@@ -1,0 +1,14 @@
+{
+  "name": "issue-relay-plugin-unused-fields",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "lint": "oxlint src"
+  },
+  "packageManager": "pnpm@10.10.0",
+  "devDependencies": {
+    "eslint-plugin-relay": "^2.0.0",
+    "oxlint": "^1.62.0"
+  }
+}
