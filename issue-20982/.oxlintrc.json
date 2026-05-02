@@ -1,0 +1,15 @@
+{
+  "plugins": ["typescript"],
+  "categories": {
+    "correctness": "error",
+    "suspicious": "warn",
+    "pedantic": "warn",
+    "style": "warn",
+    "perf": "warn",
+    "restriction": "warn",
+    "nursery": "warn"
+  },
+  "rules": {
+    "typescript/no-namespace": "off"
+  }
+}

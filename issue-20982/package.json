@@ -1,0 +1,21 @@
+{
+  "name": "issue-20982",
+  "version": "1.0.0",
+  "description": "Repro for oxc-project/oxc#20982",
+  "type": "module",
+  "scripts": {
+    "lint:eslint": "eslint src/index.ts",
+    "lint:ox": "oxlint src/index.ts --config .oxlintrc.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.10.0",
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.3.0",
+    "oxlint": "^1.62.0",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.59.1"
+  }
+}
