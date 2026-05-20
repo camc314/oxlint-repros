@@ -1,0 +1,24 @@
+{
+  "name": "issue-22591",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "^11.0.8",
+      "onFail": "download"
+    }
+  },
+  "type": "module",
+  "dependencies": {
+    "oxlint": "^1.65.0",
+    "oxlint-tsgolint": "^0.23.0"
+  }
+}

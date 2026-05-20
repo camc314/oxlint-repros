@@ -1,0 +1,22 @@
+{
+    "plugins": [
+        "eslint",
+        "unicorn"
+    ],
+    "rules": {
+        "unicorn/prefer-array-find": "error"
+    },
+    "overrides": [
+        {
+            "files": [
+                "**/*.ts"
+            ],
+            "plugins": [
+                "typescript"
+            ],
+            "rules": {
+                "typescript/use-unknown-in-catch-callback-variable": "error"
+            }
+        }
+    ]
+}
