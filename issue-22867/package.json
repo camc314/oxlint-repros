@@ -1,0 +1,10 @@
+{
+  "name": "issue-22867",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "lint:package": "cd packages/lv-infra-plugins && oxlint rule-test.ts --format json",
+    "lint:root": "oxlint packages/lv-infra-plugins/rule-test.ts --format json",
+    "lint:explicit": "oxlint -c packages/lv-infra-plugins/.oxlintrc.json packages/lv-infra-plugins/rule-test.ts --format json"
+  }
+}

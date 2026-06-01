@@ -1,0 +1,8 @@
+{
+  "extends": [
+    "../../node_modules/@byted-image/oxlint/configs/ts.json"
+  ],
+  "ignorePatterns": [
+    "types/**"
+  ]
+}
