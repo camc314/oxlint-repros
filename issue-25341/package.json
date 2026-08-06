@@ -1,0 +1,14 @@
+{
+  "name": "issue-25341",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "lint": "oxlint"
+  },
+  "devDependencies": {
+    "@unocss/eslint-config": "66.7.5",
+    "oxlint": "1.77.0"
+  },
+  "packageManager": "pnpm@11.13.1"
+}
