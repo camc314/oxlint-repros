@@ -1,0 +1,25 @@
+issue-25341/pnpm-lock.yaml
+  s_be4b0c021ba232::t_0678dffb510a52 1-1041
+issue-25341/index.js
+  s_be4b0c021ba232::t_f952e5dccee835 1
+issue-25341/oxlint.config.ts
+  s_be4b0c021ba232::t_94423d68a5cdf4 1-11
+issue-25341/package.json
+  s_be4b0c021ba232::t_319d2de552b4bd 1-14
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "f5b657d075d02d40ce4c01029ddef05fcdd43794",
+  "prompts": {},
+  "sessions": {
+    "s_be4b0c021ba232": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019fd72d-6a90-7e80-80e3-b40004177360",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "Cameron <cclark@cloudflare.com>"
+    }
+  }
+}
