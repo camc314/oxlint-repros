@@ -1,1 +1,1 @@
-document.body.className = "p-4 flex items-center";
+document.body.className = "p-4 items-center flex";

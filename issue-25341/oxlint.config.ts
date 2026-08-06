@@ -1,4 +1,5 @@
 import { defineConfig } from "oxlint";
+import unocss from "@unocss/eslint-plugin";
 
 export default defineConfig({
   env: {
@@ -6,6 +7,9 @@ export default defineConfig({
     builtin: true,
     vue: true,
   },
-  jsPlugins: ["@unocss/eslint-config/flat"],
+  jsPlugins: ["@unocss/eslint-plugin"],
   plugins: ["eslint", "oxc", "typescript", "unicorn", "vue"],
+  rules: {
+    ...unocss.configs.recommended.rules,
+  },
 });
